@@ -79,7 +79,7 @@
 </head>
 <body>
 
-    <h1>Daria czy zostaniesz moją walentynką? 💖</h1>
+    <h1>Daria czy zostaniesz moja walentynka? 💖</h1>
 
     <div class="buttons">
         <button id="tak" onclick="goYes()">TAK</button>
@@ -116,20 +116,9 @@
         function goYes() {
             window.location.href = "tak.html";
         }
-
-        // Generowanie serduszek
-        setInterval(() => {
-            const heart = document.createElement("div");
-            heart.classList.add("heart");
-            heart.innerText = "❤️";
-            heart.style.left = Math.random() * 100 + "vw";
-            heart.style.animationDuration = (2 + Math.random() * 3) + "s";
-            document.body.appendChild(heart);
-
-            setTimeout(() => heart.remove(), 5000);
-        }, 300);
     </script>
 
 </body>
 </html>
+
 
