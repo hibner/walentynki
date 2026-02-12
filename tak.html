@@ -2,15 +2,16 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>💘</title>
+    <title>💖</title>
     <style>
         body {
             margin: 0;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #ff4d6d;
+            background: linear-gradient(135deg, #ff4d6d, #ff85a1);
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -18,10 +19,45 @@
 
         h1 {
             font-size: 48px;
+            margin-bottom: 20px;
+            animation: pop 1s ease forwards;
+        }
+
+        img {
+            width: 300px;
+            max-width: 80%;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
-    <h1>YAY! 💕<br>Zostaliśmy walentynkami!</h1>
+
+    <h1>💞 kocham cie Daria!! 💞</h1>
+
+    <!-- GIF -->
+    <img src="love.gif" alt="I love you">
+
 </body>
 </html>
